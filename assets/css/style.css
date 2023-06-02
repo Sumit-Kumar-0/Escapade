@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* navbar start  */
+nav.navbar {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    background: rgba(255, 192, 1, 0.8);
+    z-index: 2;
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+    justify-content: end;
+    padding: 0 40px 0 20px;
+    gap: 56px;
+}
+
+.navlist-item-link {
+    text-decoration: none;
+    color: #1E8DAE;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 2px;
+}
+
+/* navbar end  */
+
+/* hero slider start  */
+.main-container {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    overflow-x: clip;
+}
+
+.hero-slider .slick-dots button {
+    font-size: 0px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: #D1AF5D;
+}
+
+.hero-slider .slick-dots .slick-active button {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border: 4px solid #d1af5d;
+}
+
+.hero-slider .slick-dots li {
+    list-style: none;
+    display: inline-block;
+    margin: 4px;
+}
+
+.hero-slider .slick-dots {
+    position: absolute;
+    bottom: -20%;
+    z-index: 3;
+    left: 36%;
+    transform: rotate(-30deg);
+}
+
+.logo {
+    display: flex;
+    top: 85px;
+    position: absolute;
+    left: 40px;
+    z-index: 2;
+}
+
+.hero-heading {
+    position: absolute;
+    top: 80%;
+    z-index: 2;
+    width: 324px;
+    font-size: 44px;
+    left: 40px;
+    line-height: 1.3;
+}
+
+/* about us  */
+.about-main {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    overflow-x: clip;
+}
+
+.hero-left-bacground {
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    top: -500px;
+    height: 700px;
+    z-index: 1;
+    transform: rotate(40deg);
+    left: -50%;
+}
+
+.about-us {
+    background: #FFC001;
+    width: 250%;
+    position: absolute;
+    top: -150px;
+    height: 900px;
+    z-index: 2;
+    transform: rotate(-30deg);
+    left: -50%;
+    box-shadow: 0px 4px 30px 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.about-head-and-para {
+    position: absolute;
+    right: 40px;
+    z-index: 3;
+    text-align: center;
+    width: 600px;
+    top: -100px;
+}
+
+.about-heading {
+    font-size: 130px;
+    font-weight: 400;
+    opacity: 0.05;
+    letter-spacing: -4px;
+}
+
+.about-para {
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    line-height: 1.7;
+}
+
+.about-list-content {
+    position: absolute;
+    z-index: 3;
+    left: 60%;
+    top: 300px;
+    transform: translateX(-50%);
+    width: max-content;
+}
+
+.about-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 24px;
+    margin-bottom: 80px;
+}
+
+.about-list-item span {
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 40px;
+}
+
+.button {
+    width: 190px;
+    height: 50px;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    background: #218CAC;
+    cursor: pointer;
+}
+
+.about-images-scroll {
+    position: absolute;
+    left: 11%;
+    top: -34%;
+    transform: rotate(30deg);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #fff;
+    gap: 6px;
+    overflow: scroll;
+    height: 2000px;
+}
+
+/* social and testimonial  */
+.social-and-testimonial {
+    position: relative;
+    color: #000;
+    font-size: 40px;
+    height: 1500px;
+    background: #fff;
+    width: 100%;
+    z-index: 0;
+}
+
+.testimonial-main {
+    width: 100%;
+    max-width: 650px;
+    position: absolute;
+    right: 40px;
+    bottom: 200px;
+    z-index: 1;
+}
+
+.testimonial-main p {
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.testimonial-main h5 {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.testi-slider-arrow {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+.prev, .next{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+.prev:hover, .next:hover{
+    opacity: 1;
+}
+/* social media  */
+.social-main {
+    position: absolute;
+    background: #FFC001;
+    width: 2000px;
+    height: 350px;
+    z-index: 0;
+    bottom: -350px;
+    left: -290px;
+    transform: rotate(25deg);
+}
