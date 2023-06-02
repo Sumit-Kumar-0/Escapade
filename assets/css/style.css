@@ -59,7 +59,8 @@ header {
     padding: 2px;
     transition: 0.3s ease-in-out;
 }
-.navlist-item-link:hover {
+
+.navlist-item-link:hover, .navlist-item-link.active {
     color: #fff;
 }
 .scroll-class .navlist-item-link{

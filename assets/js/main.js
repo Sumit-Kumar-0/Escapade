@@ -7,6 +7,9 @@ document.addEventListener("scroll", () => {
     header.classList.remove("scroll-class");
   }
 })
+
+
+
 // responsive menu on click 
 let respMenu = document.querySelector(".header");
 respMenu.addEventListener("click", ()=>{
