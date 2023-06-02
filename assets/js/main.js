@@ -1,3 +1,6 @@
+// header 
+$()
+
 // hero slider 
 $(".hero-slider.slick-slider").slick({
     slidesToShow: 1,
@@ -9,7 +12,7 @@ $(".hero-slider.slick-slider").slick({
      arrows: false
    });
 
-
+  //  testimonial slider 
    $(".testimonial-slider.slick-slider").slick({
     slidesToShow: 1,
     infinite: true,
