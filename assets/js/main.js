@@ -20,8 +20,8 @@ $(".hero-slider.slick-slider").slick({
     slidesToShow: 1,
     infinite: true,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
       dots: true,
      arrows: false
    });
@@ -31,6 +31,8 @@ $(".hero-slider.slick-slider").slick({
     slidesToShow: 1,
     infinite: true,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
    });
